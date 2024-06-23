@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mind-Bending Movies</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: black;
+            position: relative;
+        }
+        .navbar .name {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            color: red;
+        }
+        .navbar .menu {
+            display: flex;
+            gap: 20px;
+        }
+        .navbar .menu a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .navbar .menu a:hover {
+            color: red;
+        }
+        .navbar .search {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+        .navbar .search input {
+            padding: 5px 10px;
+            padding-right: 30px; 
+            color: white;
+            background-color: #333;
+            border: 1px solid #555;
+            border-radius: 5px;
+        }
+        .navbar .search input::placeholder {
+            color: #aaa;
+        }
+        .navbar .search .fa-search {
+            position: absolute;
+            right: 10px; 
+            color: white;
+        }
+        .top5 {
+            text-align: center;
+            margin-top: 20px; 
+            margin-left: 100px;
+            margin-right: 50px;
+            text-align: justify;
+            text-justify: inter-word;
+            width: 80%;
+        }
+        .container {
+            display: flex;
+            width: 800px;
+            margin: 20px auto;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-top: 50px;
+
+        }
+        .container2 {
+            display: flex;
+            justify-content: center;
+            width: 800px;
+            margin: 20px auto;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-top: 150px;
+            position: absolute;
+            top: 700px;
+            margin-left: -350px;
+        }
+        .container3 {
+            display: flex;
+            justify-content: center;
+            width: 800px;
+            margin: 20px auto;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-top: 150px;
+            position: absolute;
+            top: 300px;
+            margin-left: -350px;
+        }
+        .container4 {
+            display: flex;
+            justify-content: center;
+            width: 800px;
+            margin: 20px auto;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-top: 150px;
+            position: absolute;
+            top: 380px;
+            margin-left: -350px;
+        }
+        .number {
+            font-size: 100px;
+            font-weight: bold;
+            color: red;
+            margin-right: 20px;
+        }
+        .poster {
+            flex: 1;
+        }
+        .poster img {
+            max-width: 100%;
+            height: auto;
+        }
+        .details {
+            flex: 2;
+            margin-left: 20px;
+        }
+        .details h1 {
+            font-size: 24px;
+            margin: 0 0 10px;
+        }
+        .details .label {
+            font-weight: bold;
+        }
+        .details .info {
+            margin-bottom: 10px;
+        }
+        .details .stars {
+            color: gold;
+        }
+        .details .summary {
+            margin: 20px 0;
+        }
+        .btn {
+            display: inline-block;
+            width: 50%;
+            padding: 12px;
+            background-color: red;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 25px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="name">
+            <p>NETFLEX</p>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search...">
+            <i class="fas fa-search"></i>
+        </div>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+    <div class="top5">
+        <center><h1>Mind-Bending Movies Ever</h1></center>
+        <p>Welcome to the fascinating world of mind-bending movies, where the boundaries of reality are blurred, and the lines between dreams and waking life are often indistinguishable. These films challenge our perceptions, twist our minds, and leave us questioning the very nature of existence. They are crafted with intricate plots, clever narratives, and stunning visuals that invite us to embark on a journey beyond the ordinary.</p>
+        <p>Mind-bending movies are a genre unto themselves, combining elements of science fiction, psychological thriller, and fantasy. They captivate audiences by delving into complex themes such as time travel, alternate realities, and the subconscious mind. Directors like Christopher Nolan, David Lynch, and the Wachowskis have become synonymous with this genre, creating masterpieces that continue to intrigue and inspire viewers.</p>
+        <p>In this list, we will explore the top four mind-bending movies of all time. Each film is a testament to the power of cinema to not only entertain but also provoke thought and ignite the imagination. Prepare to have your mind twisted, your perceptions challenged, and your sense of reality questioned as we dive into these extraordinary films.</p>
+    </div>
+    <div class="container">
+        <div class="number">1</div>
+        <div class="poster">
+            <img src="prd.jpg" alt="Predestination Poster">
+        </div>
+        <div class="details">
+            <h1>Predestination</h1>
+            <div class="info"><b>Rating:</b> PASSED</div>
+            <div class="info"><b>Genre:</b> Sci-Fi/Action</div>
+            <div class="info"><b>Release Date:</b> August 28, 2014</div>
+            <div class="info"><b>Director:</b> Michael Spierig, Peter Spierig</div>
+            <div class="info"><b>Cast:</b> Ethan Hawke, Sarah Snook, and Noah Taylor</div>
+            <div class="info"><b>Runtime:</b> 97 Minutes</div>
+            <div class="stars">★★★★</div>
+            <div class="summary">
+                <p>A temporal agent (Ethan Hawke) embarks on a final time-traveling assignment to prevent an elusive criminal from launching an attack that kills thousands of people.</p>          
+                <center><a href="predestination.html"><button class="btn">Full Review</button></a></center>
+    </div>
+    <div class="container2">
+        <div class="number">2</div>
+        <div class="poster">
+            <img src="for.jpg" alt="Forgotten Poster">
+        </div>
+        <div class="details">
+            <h1>Forgotten</h1>
+            <div class="info"><b>Rating:</b> PASSED</div>
+            <div class="info"><b>Genre:</b> Thriller/Mystery</div>
+            <div class="info"><b>Release Date:</b> November 29, 2017</div>
+            <div class="info"><b>Director:</b> Jang Hang-jun</div>
+            <div class="info"><b>Cast:</b>  Kang Ha-neul, Yeon Je Hyung, Kim Mu-yeol, Nam Myung-ryul.</div>
+            <div class="info"><b>Runtime:</b> 109 Minutes</div>
+            <div class="stars">★★★★★</div>
+            <div class="summary">
+                <p>When his abducted brother returns, seemingly a different man with no memory of the past 19 days, Jin-seok chases after the truth behind the mysterious kidnapping.</p>          
+                <center><a href="forgotten.html"><button class="btn">Full Review</button></a></center>
+    </div>
+    <div class="container3">
+        <div class="number">3</div>
+        <div class="poster">
+            <img src="si.jpg" alt="Shutter island Poster">
+        </div>
+        <div class="details">
+            <h1>Shutter island</h1>
+            <div class="info"><b>Rating:</b> PASSED</div>
+            <div class="info"><b>Genre:</b> Thriller/Mystery</div>
+            <div class="info"><b>Release Date:</b>  February 19, 2010</div>
+            <div class="info"><b>Director:</b> Martin Scorsese</div>
+            <div class="info"><b>Cast:</b>  Leonardo DiCaprio, Mark Ruffalo, Ben Kingsley.</div>
+            <div class="info"><b>Runtime:</b> 138 Minutes</div>
+            <div class="stars">★★★★★</div>
+            <div class="summary">
+                <p>The implausible escape of a brilliant murderess brings U.S. Marshal Teddy Daniels (Leonardo DiCaprio) and his new partner (Mark Ruffalo) to Ashecliffe Hospital, a fortress-like insane asylum located on a remote, windswept island. The woman appears to have vanished from a locked room, and there are hints of terrible deeds committed within the hospital walls. As the investigation deepens, Teddy realizes he will have to confront his own dark fears if he hopes to make it off the island alive.</p>          
+                <center><a href="shutterisland.html"><button class="btn">Full Review</button></a></center>
+ <div class="container4">
+        <div class="number">4</div>
+        <div class="poster">
+            <img src="get.jpg" alt="Get Out Poster">
+        </div>
+        <div class="details">
+            <h1>Get Out</h1>
+            <div class="info"><b>Rating:</b> PASSED</div>
+            <div class="info"><b>Genre:</b> Horror/Thriller/Mystery</div>
+            <div class="info"><b>Release Date:</b> February 24, 2017</div>
+            <div class="info"><b>Director:</b> Jordan Peele</div>
+            <div class="info"><b>Cast:</b>   Daniel Kaluuya, Allison Williams, Lil Rel Howery, LaKeith Stanfield, Bradley Whitford, Caleb Landry Jones.</div>
+            <div class="info"><b>Runtime:</b> 104 Minutes</div>
+            <div class="stars">★★★★</div>
+            <div class="summary">
+                <p>Now that Chris and his girlfriend, Rose, have reached the meet-the-parents milestone of dating, she invites him for a weekend getaway upstate with her parents, Missy and Dean. At first, Chris reads the family's overly accommodating behaviour as nervous attempts to deal with their daughter's interracial relationship, but as the weekend progresses, a series of increasingly disturbing discoveries leads him to a truth that he never could have imagined.</p>          
+                <center><a href="getout.html"><button class="btn">Full Review</button></a></center>   
+</body>
+</html>

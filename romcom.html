@@ -1,0 +1,239 @@
+<html>
+<head>
+    <title>Top 5 Movies of All Times</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: black;
+            position: relative;
+        }
+        .navbar .name {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            color: red;
+        }
+        .navbar .menu {
+            display: flex;
+            gap: 20px;
+        }
+        .navbar .menu a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .navbar .menu a:hover {
+            color: red;
+        }
+        .navbar .search {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+        .navbar .search input {
+            padding: 5px 10px;
+            padding-right: 30px; 
+            color: white;
+            background-color: #333;
+            border: 1px solid #555;
+            border-radius: 5px;
+        }
+        .navbar .search input::placeholder {
+            color: #aaa;
+        }
+        .navbar .search .fa-search {
+            position: absolute;
+            right: 10px; 
+            color: white;
+        }
+        .top5 {
+            text-align: center;
+            margin-top: 20px; 
+            font-weight: bold;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        .number {
+            font-size: 100px;
+            font-weight: bold;
+            color: red;
+            margin-right: 20px;
+        }
+        .container {
+            display: flex;
+            width: 800px;
+            margin: 20px auto;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-top: 0px;
+        }
+        .container2 {
+            display: flex;
+            justify-content: center;
+            width: 800px;
+            margin: 20px auto;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-top: 150px;
+            position: absolute;
+            top: 600px;
+            margin-left: -20px;
+        }
+        .container3 {
+            display: flex;
+            justify-content: center;
+            width: 800px;
+            margin: 20px auto;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-top: 50px;
+            position: absolute;
+            top: 500px;
+            margin-left: 0px;
+        }
+        .poster {
+            flex: 1;
+        }
+        .poster img {
+            max-width: 100%;
+            height: auto;
+        }
+        .details {
+            flex: 2;
+            margin-left: 20px;
+        }
+        .details h1 {
+            font-size: 24px;
+            margin: 0 0 10px;
+        }
+        .details .label {
+            font-weight: bold;
+        }
+        .details .info {
+            margin-bottom: 10px;
+        }
+        .details .stars {
+            color: gold;
+        }
+        .details .summary {
+            margin: 20px 0;
+        }
+        .btn {
+            display: inline-block;
+            width: 50%;
+            padding: 12px;
+            background-color: red;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 25px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="name">
+            <p>NETFLEX</p>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search...">
+            <i class="fas fa-search"></i>
+        </div>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+    <div class="top5">
+        <h1>Romantic Movies of The Century So Far </h1>
+    </div>
+    <div class="container">
+        <div class="number">1</div>
+        <div class="poster">
+            <img src="lww.jpg" alt="Little Women Poster">
+        </div>
+        <div class="details">
+            <h1>Little Women</h1>
+            <div class="info"><b>Rating:</b> PASSED</div>
+            <div class="info"><b>Genre:</b> Romance/Drama</div>
+            <div class="info"><b>Release Date:</b> December 25, 2019</div>
+            <div class="info"><b>Director:</b> Greta Gerwig</div>
+            <div class="info"><b>Cast:</b> Saoirse Ronan, Emma Watson, Florence Pugh, Eliza Scanlen, Laura Dern, Timothée Chalamet.</div>
+            <div class="info"><b>Runtime:</b> 135 Minutes</div>
+            <div class="stars">★★★★★</div>
+            <div class="summary">
+                <p>In the years after the Civil War, Jo March lives in New York and makes her living as a writer, while her sister Amy studies painting in Paris. Amy has a chance encounter with Theodore, a childhood crush who proposed to Jo but was ultimately rejected. Their oldest sibling, Meg, is married to a schoolteacher, while shy sister Beth develops a devastating illness that brings the family back together.</p>          
+                <center><a href="littlewomen.html"<button class="btn">Full Review</button></a></center>
+            </div>
+        </div>
+    <div class="container2">
+        <div class="number">2</div>
+        <div class="poster">
+            <img src="nb.jpg" alt="The Notebook Poster">
+        </div>
+        <div class="details">
+            <h1>The Notebook</h1>
+            <div class="info"><b>Rating:</b> PASSED</div>
+            <div class="info"><b>Genre:</b> Romance/Comedy</div>
+            <div class="info"><b>Release Date:</b> September 15, 2004</div>
+            <div class="info"><b>Director:</b> Nick Cassavetes</div>
+            <div class="info"><b>Cast:</b> Ryan Gosling and Rachel McAdams </div>
+            <div class="info"><b>Runtime:</b> 124 Minutes</div>
+            <div class="stars">★★★★★</div>
+            <div class="summary">
+                <p>In 1940s South Carolina, mill worker Noah Calhoun (Ryan Gosling) and rich girl Allie (Rachel McAdams) are desperately in love. But her parents don't approve. When Noah goes off to serve in World War II, it seems to mark the end of their love affair. In the interim, Allie becomes involved with another man (James Marsden). But when Noah returns to their small town years later, on the cusp of Allie's marriage, it soon becomes clear that their romance is anything but over.</p>
+               </div>    
+               <center><a href="thenotebook.html"<button class="btn">Full Review</button></a></center>
+            </div>   
+    <div class="container3">
+        <div class="number">3</div>
+        <div class="poster">
+            <img src="pap.jpg" alt="Pride and Prejudice Poster">
+            </div>
+        <div class="details">
+            <h1>Pride & Prejudice</h1>
+            <div class="info"><b>Rating:</b> PASSED</div>
+            <div class="info"><b>Genre:</b> Romance/Comedy</div>
+            <div class="info"><b>Release Date:</b> September 16, 2005</div>
+            <div class="info"><b>Director:</b> Joe Wright</div>
+            <div class="info"><b>Cast:</b> Keira Knightley and Matthew Macfadyen </div>
+            <div class="info"><b>Runtime:</b> 127 Minutes</div>
+            <div class="stars">★★★★</div>
+            <div class="summary">
+                <p>In 1940s South Carolina, mill worker Noah Calhoun (Ryan Gosling) and rich girl Allie (Rachel McAdams) are desperately in love. But her parents don't approve. When Noah goes off to serve in World War II, it seems to mark the end of their love affair. In the interim, Allie becomes involved with another man (James Marsden). But when Noah returns to their small town years later, on the cusp of Allie's marriage, it soon becomes clear that their romance is anything but over.</p>
+            </div>    
+                <center><a href="prideandprejudice.html"<button class="btn">Full Review</button></a></center>
+            </div>  
+            <div class="container3">
+                <div class="number">4</div>
+                <div class="poster">
+                    <img src="cmbyn.jpg" alt="CMBYN Poster">
+                </div>
+                <div class="details">
+                    <h1>Call Me by Your Name</h1>
+                    <div class="info"><b>Rating:</b> PASSED</div>
+                    <div class="info"><b>Genre:</b> Romance/Drama</div>
+                    <div class="info"><b>Release Date:</b> January 18, 2018</div>
+                    <div class="info"><b>Director:</b> Luca Guadagnino</div>
+                    <div class="info"><b>Cast:</b> Armie Hammer, Timothée Chalamet, Michael Stuhlbarg</div>
+                    <div class="info"><b>Runtime:</b> 132 Minutes</div>
+                    <div class="stars">★★★★</div>
+                    <div class="summary">
+                        <p>It's the summer of 1983, and precocious 17-year-old Elio Perlman is spending the days with his family at their 17th-century villa in Lombardy, Italy. He soon meets Oliver, a handsome doctoral student who's working as an intern for Elio's father. Amid the sun-drenched splendor of their surroundings, Elio and Oliver discover the heady beauty of awakening desire over the course of a summer that will alter their lives forever.</p>          
+                        <center><a href="callmebyyourname.html"<button class="btn">Full Review</button></a></center>
+                    </div>
+        </body>
+</html>
