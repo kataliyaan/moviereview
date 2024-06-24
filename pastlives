@@ -1,0 +1,137 @@
+<html>
+<head>
+    <title>Full Review - Predestination</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+            text-align: justify;
+            text-justify: inter-word;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: black;
+            position: relative;
+        }
+        .navbar .name {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            color: red;
+        }
+        .navbar .menu {
+            display: flex;
+            gap: 20px;
+        }
+        .navbar .menu a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .navbar .menu a:hover {
+            color: red;
+        }
+        .navbar .search {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+        .navbar .search input {
+            padding: 5px 10px;
+            padding-right: 30px; 
+            color: white;
+            background-color: #333;
+            border: 1px solid #555;
+            border-radius: 5px;
+        }
+        .navbar .search input::placeholder {
+            color: #aaa;
+        }
+        .navbar .search .fa-search {
+            position: absolute;
+            right: 10px; 
+            color: white;
+        }
+        .container {
+            width: 50%;
+            padding: 20px;
+            text-align: center;
+            box-sizing: border-box;
+            margin-top: 80px; 
+            font-weight: normal;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: justify;
+            text-justify: inter-word;
+        }
+        .container video {
+            display: block;
+            margin: 20px auto;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="name">
+            <p>NETFLEX</p>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search...">
+            <i class="fas fa-search"></i>
+        </div>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+    <div class="container">
+        <center><h1>Past Lives</h1></center>
+        <h2>Synopsis</h2>
+        <p>"Past Lives," directed by Celine Song, is a poignant drama that explores the themes of love, destiny, and the passage of time. The film follows the intertwined lives of Nora (Greta Lee) and Hae Sung (Teo Yoo), who share a deep connection from their childhood in South Korea. When Nora's family emigrates to the United States, the two lose touch, only to reconnect years later through social media. Their reunion sparks an exploration of what could have been, as well as the lives they have built separately.</p>
+        <h2>Plot and Themes</h2>
+        <p>The film begins with a glimpse into the childhood friendship between Nora and Hae Sung. They share an innocent and profound bond, which is abruptly disrupted when Nora's family emigrates to the United States. Years later, as adults, they reconnect online, leading to an emotional and introspective journey.</p>
+        <p>Nora, now an aspiring writer in New York City, is married to Arthur (John Magaro), an American novelist. Despite her fulfilling life, the reconnection with Hae Sung stirs up nostalgic feelings and unresolved emotions. Hae Sung, who remained in South Korea, is also affected by their reunion, prompting him to visit Nora in New York.</p>
+        <p>The film delves into themes of destiny, exploring the concept of "in-yun," a Korean belief in fate and the connections between people. It examines how past experiences and relationships shape our present and future, and how the paths we take are influenced by both choice and circumstance.</p>
+        <h2>Visuals and Cinematography</h2>
+        <p>The cinematography by Shabier Kirchner beautifully captures the contrast between the bustling life of New York City and the quieter, more reflective moments shared by the characters. The visual storytelling enhances the emotional depth of the film, using soft lighting and intimate close-ups to highlight the characters' internal struggles and connections.</p>
+        <h2>Theme and Analysis</h2>
+        <p>"Inception" explores the fluid boundaries between reality and dreams, challenging the audience to question the nature of perception and consciousness. The concept of "inception" – planting an idea so deeply within the subconscious that it is perceived as organic – raises philosophical questions about free will and the influence of external forces on our thoughts and decisions.</p>
+        <p>The film also delves into the themes of guilt and redemption, as Cobb's journey is driven by his desire to reconcile with the memory of his wife and return to his children. The intricate narrative structure, with its multiple layers of dreams within dreams, mirrors the complexity of the human mind and the ways in which past traumas and unresolved emotions can shape our reality.</p>
+        <h2>Shooting Locations</h2>
+        <p>"Past Lives" was shot on location in New York City, capturing the essence of the city that plays a significant role in Nora's life. The film's use of real locations adds to its authenticity, grounding the story in a tangible reality that resonates with audiences.</p>
+        <center><img src="pl3.jpg"></center>
+        <p><center>
+            <i class="fa-solid fa-location-dot"></i>
+            <a href="https://earth.app.goo.gl/?apn=com.google.earth&isi=293622097&ius=googleearth&link=https%3a%2f%2fearth.google.com%2fweb%2fsearch%2fNew%2bYork,%2bNY,%2bUSA%2f%4040.7330678,-74.0122566,5.38492751a,0d,60y,167.76667849h,100.50179945t,0r%2fdata%3dCnwaUhJMCiUweDg5YzI0ZmE1ZDMzZjA4M2I6MHhjODBiOGYwNmUxNzdmZTYyGcNylTg8W0RAIZgqvdthgFLAKhFOZXcgWW9yaywgTlksIFVTQRgBIAEiJgokCSZz-9WTBUFAEdVEKLUDBUFAGQWrbgjgj13AIdx_hV6ZkF3AIjAKLEFGMVFpcFBNY21TdzVueTAzQzhSMlVyM2VDcFhJTUpoSzItLS15RFotbDdzEAU6AwoBMA">
+                New York
+            </a>
+        </center>
+        </p>
+        <h2>Performances</h2>
+        <img src="pl1.jpg">
+        <p>Greta Lee delivers a nuanced and heartfelt performance as Nora, portraying the character's inner conflict and emotional journey with subtlety and grace. Teo Yoo is equally compelling as Hae Sung, conveying a deep sense of longing and introspection. Their chemistry is palpable, making their interactions both poignant and believable.</p>
+        <img src="pl2.jpg">
+        <p>John Magaro's portrayal of Arthur provides a grounded counterbalance to the film's central dynamic. His character's understanding and supportive nature add complexity to the narrative, highlighting the different forms of love and connection that shape our lives.</p>
+        <h2>Themes and Analysis</h2>
+        <p>"Past Lives" explores the concept of parallel lives and the paths not taken. It delves into the bittersweet nature of nostalgia and the human tendency to wonder about the "what ifs" in life. The film examines how our past relationships influence our present selves, and how the choices we make are interwoven with our sense of identity and destiny.</p>
+        <video width="630" height="420" controls>
+            <source src="plv.mp4" type="video/mp4">
+        </video>
+        <p>The theme of "in-yun" is central to the film, reflecting on the idea that people are destined to meet and influence each other's lives across different lifetimes. This concept adds a layer of spiritual and philosophical depth, prompting viewers to reflect on their own connections and the significance of their relationships.</p>
+        
+        <h2>Conclusion</h2>
+        <p>"Past Lives" is a beautifully crafted film that combines sensitive storytelling, strong performances, and evocative visuals to explore themes of love, destiny, and the passage of time. Celine Song's direction brings a delicate touch to the narrative, allowing the characters' emotions and experiences to unfold naturally and authentically.</p>
+        <p>The film's exploration of nostalgia and the interplay between past and present makes it a deeply moving and thought-provoking experience. "Past Lives" invites viewers to consider the impact of their own relationships and the intricate web of connections that shape their lives.</p>
+        <p>Overall, "Past Lives" is a must-watch for fans of character-driven dramas and anyone who appreciates a film that thoughtfully examines the complexities of the human heart. Its universal themes and emotional resonance ensure that it will leave a lasting impression on audiences.</p>
+    
+    </div>
+</body>
+</html>
