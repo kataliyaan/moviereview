@@ -1,0 +1,338 @@
+<html>
+<head>
+    <title>ONREAD - Movie Review</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+        }
+        header {
+            width: 100%;
+            height: 800px;
+            background: linear-gradient(rgba(0, 0, 0, 0.89), rgba(31, 29, 29, 0.925)), url('goat.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: black;
+            position: absolute;
+            top: 0;
+            width: 97%;
+        }
+
+        .navbar .name {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            color: red;
+        }
+
+        .navbar .menu {
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar .menu a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .navbar .menu a:hover {
+            color: red;
+            scale: 1.2;
+        }
+
+        .navbar .search {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .search input {
+            padding: 5px 10px;
+            padding-right: 30px;
+            color: white;
+            background-color: #333;
+            border: 1px solid #555;
+            border-radius: 5px;
+        }
+
+        .navbar .search input::placeholder {
+            color: #aaa;
+        }
+
+        .navbar .search .fa-search {
+            position: absolute;
+            right: 10px;
+            color: white;
+        }
+
+        .title {
+            font-size: 90px;
+            margin-top: 80px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .carousel-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            width: 18rem;
+            margin: 0 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.925);
+            border: 1px solid black;
+            transition: 0.5s ease-out;
+        }
+        .card:hover {
+            border-color: #263d4e;
+            box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-body {
+            text-align: center;
+        }
+
+        main {
+            padding: 10px;
+            margin: 20px;
+            max-width: max-content;
+            justify-content: space-around;
+            
+        }
+        main .img {
+            margin-top: 80px;
+        }
+
+        aside {
+            padding: 10px;
+            margin: 20px;
+            max-width: max-content;
+            flex-grow: 1;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-around;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            margin-bottom: 50px;
+
+        }
+        .content-two {
+            display: flex;
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+        .yt {
+            padding: 10px;
+            margin: 20px;
+            max-width: max-content;
+            margin-left: 100px;
+            justify-content: center;
+        }
+        p.one {
+             word-spacing: 40px;
+        }
+        .date {
+            font-size: 12px;
+            color: #777;
+            margin-top: 10px;
+        }
+        .profile-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            margin-top: 50px;
+        }
+        .profile-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .profile-item img {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            margin-right: 15px;
+        }
+        .profile-item .info {
+            display: flex;
+            flex-direction: column;
+        }
+        .profile-item .info .name {
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        .profile-item .info .role {
+            font-size: 0.9em;
+            color: #aaa;
+        }
+        
+        .nav-container {
+            display: flex;
+            gap: 10px;
+        }
+        .nav-button {
+            padding: 10px 20px;
+            border: 1px solid #ccc;
+            background-color: black;
+            cursor: pointer;
+            font-size: 16px;
+            text-align: center;
+            display: inline-block;
+            user-select: none;
+        }
+        .nav-button:hover {
+            background-color: red;
+        }
+        .nav-button:active {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="name">
+                <p>ONREAD</p>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search...">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="title">
+            REVIEWS
+        </div>
+        <div class="carousel-item active">
+            <div class="card">
+                <a href="interstellar.html"><img src="https://media.themoviedb.org/t/p/w220_and_h330_face/bzONet3OeCTz5q9WOkGjVpOHMSR.jpg" alt="Interstellar"></a>
+                <div class="card-body">
+                    <h3 class="card-title">INTERSTELLAR</h3>
+                    <p class="card-text">Sci-Fi / Adventure</p>
+                    <p class="card-text">Rating: 8.7/10</p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="inception.html"><img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/oYuLEt3zVCKq57qu2F8dT7NIa6f.jpg" alt="Inception"></a>
+                <div class="card-body">
+                    <h3 class="card-title">INCEPTION</h3>
+                    <p class="card-text">Action / Sci-Fi</p>
+                    <p class="card-text">Rating: 8.8/10</p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="parasite.html"><img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg" alt="Parasite"></a>
+                <div class="card-body">
+                    <h3 class="card-title">PARASITE</h3>
+                    <p class="card-text">Comedy / Thriller</p>
+                    <p class="card-text">Rating: 8.5/10</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="content">
+        <main>
+            <h1>TOP STORIES</h1>    
+            <div class="img"><img src="https://image.tmdb.org/t/p/original/dNnXJSRxP8tPdYkkikdoR6cWZ37.jpg" width="767" height="458"></div>
+            <div class="date">Feb 22, 2023 - 10 min</div>
+            <h1><a href="mindbending.html" style="text-decoration: none; color: white;">Mind-Bending Movies Ever</a></h1>
+            <p>Welcome to the fascinating world of mind-bending movies, where the boundaries of 
+                reality are blurred, and the lines between dreams and waking life are often indistinguishable...</p>
+            
+            <div class="img"><img src="https://image.tmdb.org/t/p/original/cpuV7AE0RAAbTKoQ0dS5KHu1Ajt.jpg" width="767" height="458"></div>
+            <div class="date">Feb 22, 2023 - 10 min</div>
+            <h1><a href="must-see.html" style="text-decoration: none; color: white;">Must-See Movies Chosen by Authors</a></h1>
+            <p>When it comes to finding cinematic gems, few recommendations carry as much weight as those from passionate moviegoers themselves. In this review, it curates a collection of films that have captured hearts and minds, each one a testament to the power of storytelling.</p>
+            <div class="nav-container">
+                <a href="index.html" style="text-decoration: none; color: white;"><div class="nav-button">1</div></a>
+                <a href="page2.html" style="text-decoration: none; color: white;"><div class="nav-button">2</div></a>
+                <a href="page2.html" style="text-decoration: none; color: white;"><div class="nav-button">&gt;</div></a>
+            </div>
+        </main>
+        <aside>
+            <center><p>Advertisement</p></center>
+            <a href="https://open.spotify.com/artist/5L1lO4eRHmJ7a0Q6csE5cT"><img src="https://www.billboard.com/wp-content/uploads/2024/06/LISA-ROCKSTAR-art-work-billboard-1240.jpg?w=300" alt="LISA-ROCKSTAR-art-work-billboard-1240"></a><br>
+            <a href="https://open.spotify.com/artist/7tNO3vJC9zlHy2IJOx34ga"><img src="https://pbs.twimg.com/media/GPttiAGasAEBd7a.jpg" width="299" height="299"></a>
+       
+        <ul class="profile-list">
+            <h4>SPOTLIGHT CELEBRITIES</h4>
+        <hr>
+            <li class="profile-item">
+                <img src="https://ucarecdn.com/86025dd5-4ede-4c11-9750-3532f466af68/-/format/auto/-/preview/3000x3000/-/quality/lighter/shutterstock_1433831474.jpg">
+                <div class="info">
+                    <span class="name">Leonardo Dicaprio</span>
+                    <span class="role">ACTOR</span>
+                </div>
+            </li>
+            <li class="profile-item">
+                <img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/44410_v9_bc.jpg">
+                <div class="info">
+                    <span class="name">Matthew McConaughey</span>
+                    <span class="role">ACTOR</span>
+                </div>
+            </li>
+            <li class="profile-item">
+                <img src="https://m.media-amazon.com/images/M/MV5BNThiOTM4NTAtMDczNy00YzlkLWJhNTEtZTZhNDVmYzlkZWI0XkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_.jpg">
+                <div class="info">
+                    <span class="name">Timothee Chalamet</span>
+                    <span class="role">ACTOR</span>
+                </div>
+            </li>
+            <li class="profile-item">
+                <img src="https://m.media-amazon.com/images/M/MV5BMThlN2ZjZDAtODY4OS00MDQ4LWJmNDgtY2U4M2NiNDk3ODljXkEyXkFqcGdeQXVyMTU2MDcyMjMw._V1_.jpg">
+                <div class="info">
+                    <span class="name">Greta Lee</span>
+                    <span class="role">ACTRESS</span>
+                </div>
+            </li>
+        </ul>
+        <h4>SEE ALL CELEBRITIES ></h4><br>
+        <center><p>Advertisement</p></center>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToa01TPaOYfUNqL5g3vY7ca1bqEx5YH0SmHQ&s" width="299" height="299">
+        <hr>
+        </aside>
+        
+    </div>
+    
+        
+</body>
+</html>
