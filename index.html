@@ -250,7 +250,27 @@
             margin-bottom: 0;
             text-align: center;
         }
-        
+        .nav-container {
+            display: flex;
+            gap: 10px;
+        }
+        .nav-button {
+            padding: 10px 20px;
+            border: 1px solid #ccc;
+            background-color: black;
+            cursor: pointer;
+            font-size: 16px;
+            text-align: center;
+            display: inline-block;
+            user-select: none;
+        }
+        .nav-button:hover {
+            background-color: red;
+        }
+        .nav-button:active {
+            background-color: red;
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -313,17 +333,11 @@
             <h1><a href="romcom.html" style="text-decoration: none;color: white;"> Romantic Movies of the Century So Far</a></h1>
             <p>In the realm of cinema, certain films transcend time to become timeless classics. "Romantic Movies of the Century So Far" stakes its claim in this hallowed ground, promising not just a love story, but a profound exploration of human emotions...</p>
             
-            <div class="img"><img src="https://image.tmdb.org/t/p/original/dNnXJSRxP8tPdYkkikdoR6cWZ37.jpg" width="767" height="458"></div>
-            <div class="date">Feb 22, 2023 - 10 min</div>
-            <h1><a href="mindbending.html" style="text-decoration: none; color: white;">Mind-Bending Movies Ever</a></h1>
-            <p>Welcome to the fascinating world of mind-bending movies, where the boundaries of 
-                reality are blurred, and the lines between dreams and waking life are often indistinguishable...</p>
-            
-            <div class="img"><img src="https://image.tmdb.org/t/p/original/cpuV7AE0RAAbTKoQ0dS5KHu1Ajt.jpg" width="767" height="458"></div>
-            <div class="date">Feb 22, 2023 - 10 min</div>
-            <h1><a href="must-see.html" style="text-decoration: none; color: white;">Must-See Movies Chosen by Authors</a></h1>
-            <p>When it comes to finding cinematic gems, few recommendations carry as much weight as those from passionate moviegoers themselves. In this review, it curates a collection of films that have captured hearts and minds, each one a testament to the power of storytelling.</p>
-
+            <div class="nav-container">
+                <a href="index.html" style="text-decoration: none; color: white;"><div class="nav-button">1</div></a>
+                <a href="page2.html" style="text-decoration: none; color: white;"><div class="nav-button">2</div></a>
+                <a href="page2.html" style="text-decoration: none; color: white;"><div class="nav-button">&gt;</div></a>
+            </div>
         </main>
         <aside>
             <center><p>Advertisement</p></center>
@@ -362,9 +376,14 @@
                 </div>
             </li>
         </ul>
-        <h4>SEE ALL CELEBRITIES ></h4>
-
+        <h4>SEE ALL CELEBRITIES ></h4><br>
+        <center><p>Advertisement</p></center>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToa01TPaOYfUNqL5g3vY7ca1bqEx5YH0SmHQ&s" width="299" height="299">
+        <br>
+        <h4>FIND US ON FACEBOOK</h4>
+        <hr>
         </aside>
+        
     </div>
     <div class="h1-style">
         <h1>TRAILERS</h1>
