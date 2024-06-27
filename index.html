@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
     <title>Movie Review</title>
@@ -56,6 +55,7 @@
 
         .navbar .menu a:hover {
             color: red;
+            scale: 1.2;
         }
 
         .navbar .search {
@@ -107,6 +107,7 @@
         .card:hover {
             border-color: #263d4e;
             box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+            transform: scale(1.05);
         }
 
         .card img {
@@ -138,13 +139,14 @@
             margin: 0;
             width: 100%;
         }
-        .content2 {
+        .content-two {
             display: flex;
-            justify-content: space-between;
-            padding: 0;
+            background-color: black;
+            color: white;
             margin: 0;
-            width: 100%;
-            background-color:  #080808;
+            padding: 0;
+            height: 100vh;
+            box-sizing: border-box;
         }
         .yt {
             padding: 10px;
@@ -189,6 +191,57 @@
         .profile-item .info .role {
             font-size: 0.9em;
             color: #aaa;
+        }
+        #videoPlayer {
+            flex: 2;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: max-content;
+        }
+        #videoList {
+            flex: 1;
+            padding: 20px;
+            background-color: #202020;
+            overflow-y: auto;
+            margin-top: 120px;
+            height: max-content;
+            margin-right: 40px;
+            border-radius: 10px;
+            
+        }
+        .videoItem {
+            margin-bottom: 10px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            transition: background-color 0.3s;
+        }
+        .videoItem:hover {
+            background-color: #333;
+        }
+        .videoItem img {
+            width: 100px;
+            height: 56px;
+            margin-right: 10px;
+        }
+        .videoItem p {
+            margin: 0;
+        }
+        iframe {
+            width: 100%;
+            height: calc(100% - 40px);
+            max-width: 860px;
+            max-height: 480px;
+            border: none;
+            margin-left: 10px;
+        }
+        .h1-style {
+            margin: 40px;
+            font-weight: bold;
+            margin-bottom: 0;
+            text-align: center;
         }
     </style>
 </head>
@@ -245,28 +298,29 @@
             <img src="https://media.npr.org/assets/img/2012/03/29/titanic_custom-a7161a7b82be4249365df5349d977dc0a652102a.jpg?s=1100&c=50&f=jpeg" width="767" height="458">
             <div class="date">Feb 21, 2023 - 10 min</div>
             <h1><a href="top5.html" style="text-decoration: none; color: white;" >Top 5 Movies of All Times</a></h1>
-            <p>We're diving into the world of cinema to bring you the Top 5 Movies of All Time. Whether you're a casual movie-goer or a die-hard film buff,<br> this list is sure to spark some excitement and maybe even a little debate. We've scoured the archives...</p>
+            <p>We're diving into the world of cinema to bring you the Top 5 Movies of All Time. Whether you're a casual movie-goer or a die-hard film buff, this list is sure to spark some excitement and maybe even a little debate. We've scoured the archives...</p>
             <hr>
             <img src="https://image.tmdb.org/t/p/original/dGtRFtnFQ9D66nk2AnoioX9qiCx.jpg" width="767" height="458">
             <div class="date">Feb 22, 2023 - 10 min</div>
             <h1><a href="romcom.html" style="text-decoration: none;color: white;"> Romantic Movies of the Century So Far</a></h1>
-            <p>We're diving into the world of cinema to bring you the Top 5 Movies of All Time. Whether you're a casual movie-goer or a die-hard film buff,<br> this list is sure to spark some excitemen...</p>
+            <p>In the realm of cinema, certain films transcend time to become timeless classics. "Romantic Movies of the Century So Far" stakes its claim in this hallowed ground, promising not just a love story, but a profound exploration of human emotions...</p>
             <hr>
             <img src="https://image.tmdb.org/t/p/original/dNnXJSRxP8tPdYkkikdoR6cWZ37.jpg" width="767" height="458">
             <div class="date">Feb 22, 2023 - 10 min</div>
             <h1><a href="mindbending.html" style="text-decoration: none; color: white;">Mind-Bending Movies Ever</a></h1>
-            <p>We're diving into the world of cinema to bring you the Top 5 Movies of All Time. Whether you're a casual movie-goer or a die-hard film buff,<br> this list is sure to spark some excitemen...</p>
+            <p>Welcome to the fascinating world of mind-bending movies, where the boundaries of 
+                reality are blurred, and the lines between dreams and waking life are often indistinguishable...</p>
             <hr>
             <img src="https://image.tmdb.org/t/p/original/cpuV7AE0RAAbTKoQ0dS5KHu1Ajt.jpg" width="767" height="458">
             <div class="date">Feb 22, 2023 - 10 min</div>
             <h1><a href="must-see.html" style="text-decoration: none; color: white;">Must-See Movies Chosen by Authors</a></h1>
-            <p>We're diving into the world of cinema to bring you the Top 5 Movies of All Time. Whether you're a casual movie-goer or a die-hard film buff,<br> this list is sure to spark some excitemen...</p>
+            <p>When it comes to finding cinematic gems, few recommendations carry as much weight as those from passionate moviegoers themselves. In this review, it curates a collection of films that have captured hearts and minds, each one a testament to the power of storytelling.</p>
 
         </main>
         <aside>
             <center><p>Advertisement</p></center>
-            <img src="https://www.billboard.com/wp-content/uploads/2024/06/LISA-ROCKSTAR-art-work-billboard-1240.jpg?w=300" alt="LISA-ROCKSTAR-art-work-billboard-1240"><br>
-            <img src="https://pbs.twimg.com/media/GPttiAGasAEBd7a.jpg" width="299" height="299">
+            <a href="https://open.spotify.com/artist/5L1lO4eRHmJ7a0Q6csE5cT"><img src="https://www.billboard.com/wp-content/uploads/2024/06/LISA-ROCKSTAR-art-work-billboard-1240.jpg?w=300" alt="LISA-ROCKSTAR-art-work-billboard-1240"></a><br>
+            <a href="https://open.spotify.com/artist/7tNO3vJC9zlHy2IJOx34ga"><img src="https://pbs.twimg.com/media/GPttiAGasAEBd7a.jpg" width="299" height="299"></a>
        
         <ul class="profile-list">
             <h4>SPOTLIGHT CELEBRITIES</h4>
@@ -304,12 +358,45 @@
 
         </aside>
     </div>
-    <div class="content2">
-        <div class="yt">
-            <h1>TRAILERS</h1>
-            <iframe width="666" height="373" src="https://www.youtube.com/embed/v8yrZSkKxTA?si=hiqS7BIR9dI8DPlG">
-            </iframe>            
-        </main>
-    </div>
+    <div class="h1-style">
+        <h1>TRAILERS</h1>
+        </div>
+    <div class="content-two">
+        <div id="videoPlayer">
+            <iframe id="trailer" src="https://www.youtube.com/embed/v8yrZSkKxTA?si=hiqS7BIR9dI8DPlG" allowfullscreen></iframe>
+        </div>
+        <div id="videoList">
+            <div class="videoItem" onclick="loadVideo('v8yrZSkKxTA?si=hiqS7BIR9dI8DPlG')">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScANDvoQmTatWQhOecM0lSY_J41j1oHVaHsj-mjYSmEdZ5P2yM" alt="Shutter Island">
+                <p>Shutter Island Official Trailer</p>
+            </div>
+            <div class="videoItem" onclick="loadVideo('isOGD_7hNIY?si=biGqCzqDpVgrOkbC')">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEE5MAWi84RV4XahPsEX2m4oGQ08xn_Ctot6fVUgXFdU75BUcZ" alt="Parasite">
+                <p>Parasite Official Trailer</p>
+            </div>
+            <div class="videoItem" onclick="loadVideo('AST2-4db4ic?si=tq_o1S6o5CWd5bBO')">
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSvT5HXdCQdHe9vBB2C4wk6u5dHwHgXNq2fabU-XO16lYxrwfGA" alt="Little Women">
+                <p>Little Women Official Teaser Trailer</p>
+            </div>
+            <div class="videoItem" onclick="loadVideo('BjJcYdEOI0k?si=YgBBhIeCA8X30FQS')">
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT4lChqeaLNsu4QqTdIVNI7Di1okbGtELD4nTjykhHtuXmKbfOo" alt="The Notebook">
+                <p>The Notebook Trailer</p>
+            </div>
+            <div class="videoItem" onclick="loadVideo('mqqft2x_Aa4?si=y4MY8VkJRtjh-t5H')">
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkzd9C56axvAJQqg9fzk9tNItYRnv-bpoG78baD4HRk4UYda5b" alt="Batman">
+                <p>Batman Official Trailer</p>
+            </div>
+            <div class="videoItem" onclick="loadVideo('EXeTwQWrcwY?si=PPRjth-MKK96J-bd')">
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPid7-f2H5nHrOiDUB4X6wEVS-P634g8S9Aol2v_bI9PeFJkDI" alt="The Dark Knight">
+                <p>The Dark Knight Official Teaser Trailer</p>
+            </div>
+        </div>
+    
+        <script>
+            function loadVideo(videoId) {
+                document.getElementById('trailer').src = 'https://www.youtube.com/embed/' + videoId;
+            }
+        </script>
+        
 </body>
 </html>
