@@ -150,15 +150,7 @@
             margin-bottom: 50px;
 
         }
-        .content-two {
-            display: flex;
-            background-color: black;
-            color: white;
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            box-sizing: border-box;
-        }
+        s
         .yt {
             padding: 10px;
             margin: 20px;
@@ -203,6 +195,18 @@
             font-size: 0.9em;
             color: #aaa;
         }
+    
+
+        .content-two {
+            display: flex;
+            flex-direction: row;
+            background-color: black;
+            color: white;
+            height: 100vh;
+            box-sizing: border-box;
+            padding: 20px; 
+        }
+
         #videoPlayer {
             flex: 2;
             padding: 20px;
@@ -211,17 +215,16 @@
             justify-content: center;
             min-height: max-content;
         }
+
         #videoList {
             flex: 1;
             padding: 20px;
             background-color: #202020;
             overflow-y: auto;
-            margin-top: 120px;
-            height: max-content;
-            margin-right: 40px;
+            margin: 20px 0 0 20px; 
             border-radius: 10px;
-            
         }
+
         .videoItem {
             margin-bottom: 10px;
             cursor: pointer;
@@ -229,25 +232,30 @@
             align-items: center;
             transition: background-color 0.3s;
         }
+
         .videoItem:hover {
             background-color: #333;
+            scale: 1.1;
         }
+
         .videoItem img {
             width: 100px;
             height: 56px;
             margin-right: 10px;
         }
+
         .videoItem p {
             margin: 0;
         }
+
         iframe {
             width: 100%;
             height: calc(100% - 40px);
             max-width: 860px;
             max-height: 480px;
             border: none;
-            margin-left: 10px;
         }
+
         .h1-style {
             margin: 40px;
             font-weight: bold;
@@ -393,37 +401,53 @@
         <h1>TRAILERS</h1>
         <hr>
         </div>
-    <div class="content-two">
-        <div id="videoPlayer">
-            <iframe id="trailer" src="https://www.youtube.com/embed/v8yrZSkKxTA?si=hiqS7BIR9dI8DPlG" allowfullscreen></iframe>
+        <div class="content-two">
+            <div id="videoPlayer">
+                <iframe id="trailer" src="https://www.youtube.com/embed/v8yrZSkKxTA?si=hiqS7BIR9dI8DPlG" allowfullscreen></iframe>
+            </div>
+            <div id="videoList">
+                <div class="videoItem" onclick="loadVideo('v8yrZSkKxTA?si=hiqS7BIR9dI8DPlG')">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScANDvoQmTatWQhOecM0lSY_J41j1oHVaHsj-mjYSmEdZ5P2yM" alt="Shutter Island">
+                    <p>Shutter Island Official Trailer</p>
+                </div>
+                <div class="videoItem" onclick="loadVideo('isOGD_7hNIY?si=biGqCzqDpVgrOkbC')">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEE5MAWi84RV4XahPsEX2m4oGQ08xn_Ctot6fVUgXFdU75BUcZ" alt="Parasite">
+                    <p>Parasite Official Trailer</p>
+                </div>
+                <div class="videoItem" onclick="loadVideo('AST2-4db4ic?si=tq_o1S6o5CWd5bBO')">
+                    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSvT5HXdCQdHe9vBB2C4wk6u5dHwHgXNq2fabU-XO16lYxrwfGA" alt="Little Women">
+                    <p>Little Women Official Trailer</p>
+                </div>
+                <div class="videoItem" onclick="loadVideo('BjJcYdEOI0k?si=YgBBhIeCA8X30FQS')">
+                    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT4lChqeaLNsu4QqTdIVNI7Di1okbGtELD4nTjykhHtuXmKbfOo" alt="The Notebook">
+                    <p>The Notebook Trailer</p>
+                </div>
+                <div class="videoItem" onclick="loadVideo('mqqft2x_Aa4?si=y4MY8VkJRtjh-t5H')">
+                    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkzd9C56axvAJQqg9fzk9tNItYRnv-bpoG78baD4HRk4UYda5b" alt="Batman">
+                    <p>Batman Official Trailer</p>
+                </div>
+                <div class="videoItem" onclick="loadVideo('EXeTwQWrcwY?si=PPRjth-MKK96J-bd')">
+                    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPid7-f2H5nHrOiDUB4X6wEVS-P634g8S9Aol2v_bI9PeFJkDI" alt="The Dark Knight">
+                    <p>The Dark Knight Official Trailer</p>
+                </div>
+                <div class="videoItem" onclick="loadVideo('xxG-YfedrfU?si=GQv-Mi8w_Xml0IsH')">
+                    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTTPkIWVg2KRrGfPhpRbANPlObh6kHiTgxKVHv7fduGxPxbqJrq" alt="Predestination">
+                    <p>Predestination Official Trailer 2015</p>
+               </div>
+               <div class="videoItem" onclick="loadVideo('1ovgxN2VWNc?si=KzPzmllZSLSW-giq')">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIcUlpU4pnivtJTBmbU9upZvxm-E0xoYkyxoBRxRoP8OPB0BiT" alt="Train to Busan">
+                <p>Train to Busan Official Trailer</p>
+           </div>
+           <div class="videoItem" onclick="loadVideo('E-WIb4ATfT8?si=ZysAiPRP8ds9W9KO')">
+            <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQKzQ5FtJyWhrppRM02Fq2MeV-UQBP1yOQZspI_D_VqVsKoSv7Q" alt="A Quiet Place: Day One">
+            <p>A Quiet Place: Day One Final Trailer</p>
+       </div>
+       <div class="videoItem" onclick="loadVideo('P15S6ND8kbQ?si=HHtAi-5UxX_o6JRh')">
+        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTIWOY5Mh7cF7CDN2LklBzYK3eKcn3kjBbwpmB2heOxgmywkE4v" alt="No Hard Feelings">
+        <p>No Hard Feelings Trailer</p>
+   </div>
         </div>
-        <div id="videoList">
-            <div class="videoItem" onclick="loadVideo('v8yrZSkKxTA?si=hiqS7BIR9dI8DPlG')">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScANDvoQmTatWQhOecM0lSY_J41j1oHVaHsj-mjYSmEdZ5P2yM" alt="Shutter Island">
-                <p>Shutter Island Official Trailer</p>
-            </div>
-            <div class="videoItem" onclick="loadVideo('isOGD_7hNIY?si=biGqCzqDpVgrOkbC')">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEE5MAWi84RV4XahPsEX2m4oGQ08xn_Ctot6fVUgXFdU75BUcZ" alt="Parasite">
-                <p>Parasite Official Trailer</p>
-            </div>
-            <div class="videoItem" onclick="loadVideo('AST2-4db4ic?si=tq_o1S6o5CWd5bBO')">
-                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSvT5HXdCQdHe9vBB2C4wk6u5dHwHgXNq2fabU-XO16lYxrwfGA" alt="Little Women">
-                <p>Little Women Official Teaser Trailer</p>
-            </div>
-            <div class="videoItem" onclick="loadVideo('BjJcYdEOI0k?si=YgBBhIeCA8X30FQS')">
-                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT4lChqeaLNsu4QqTdIVNI7Di1okbGtELD4nTjykhHtuXmKbfOo" alt="The Notebook">
-                <p>The Notebook Trailer</p>
-            </div>
-            <div class="videoItem" onclick="loadVideo('mqqft2x_Aa4?si=y4MY8VkJRtjh-t5H')">
-                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkzd9C56axvAJQqg9fzk9tNItYRnv-bpoG78baD4HRk4UYda5b" alt="Batman">
-                <p>Batman Official Trailer</p>
-            </div>
-            <div class="videoItem" onclick="loadVideo('EXeTwQWrcwY?si=PPRjth-MKK96J-bd')">
-                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPid7-f2H5nHrOiDUB4X6wEVS-P634g8S9Aol2v_bI9PeFJkDI" alt="The Dark Knight">
-                <p>The Dark Knight Official Teaser Trailer</p>
-            </div>
-        </div>
-    
+        
         <script>
             function loadVideo(videoId) {
                 document.getElementById('trailer').src = 'https://www.youtube.com/embed/' + videoId;
